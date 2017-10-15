@@ -12,19 +12,14 @@ import TesseractOCR
 class ViewController: UIViewController,G8TesseractDelegate {
 
     @IBOutlet weak var textView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()      
         if let tesseract = G8Tesseract(language: "eng") {
             tesseract.delegate = self
-            tesseract.image = UIImage(named: "demoImage1")?.g8_blackAndWhite()
+            tesseract.image = UIImage(named: "16")?.g8_blackAndWhite()
             tesseract.recognize()
             textView.text = tesseract.recognizedText
-            tesseract.image = UIImage(named: "demoImage2")?.g8_blackAndWhite()
-            tesseract.recognize()
-            textView.text = textView.text + tesseract.recognizedText
-            tesseract.image = UIImage(named: "demoImage3")?.g8_blackAndWhite()
-            tesseract.recognize()
-            textView.text = textView.text + tesseract.recognizedText
         }
     }
 

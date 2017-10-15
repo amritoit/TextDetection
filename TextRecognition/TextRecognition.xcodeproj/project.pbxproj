@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		28BB0F875E56E05B5D3A4E70 /* Pods_TextRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EDE7605390B99CD5816821C /* Pods_TextRecognition.framework */; };
+		B72D093F1F928F0C00E4F31D /* ImageScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72D093E1F928F0C00E4F31D /* ImageScannerViewController.swift */; };
+		B72D09411F92B0B200E4F31D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B72D09401F92B0B200E4F31D /* Images.xcassets */; };
 		B769E4431F907B65008912C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B769E4421F907B65008912C6 /* AppDelegate.swift */; };
 		B769E4451F907B65008912C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B769E4441F907B65008912C6 /* ViewController.swift */; };
 		B769E4481F907B65008912C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B769E4461F907B65008912C6 /* Main.storyboard */; };
-		B769E44A1F907B65008912C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B769E4491F907B65008912C6 /* Assets.xcassets */; };
 		B769E44D1F907B65008912C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B769E44B1F907B65008912C6 /* LaunchScreen.storyboard */; };
 		B769E4581F907B65008912C6 /* TextRecognitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B769E4571F907B65008912C6 /* TextRecognitionTests.swift */; };
 		B769E4631F907B65008912C6 /* TextRecognitionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B769E4621F907B65008912C6 /* TextRecognitionUITests.swift */; };
@@ -43,11 +44,12 @@
 		641CC6FCE327B374B262125D /* Pods_TextRecognitionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextRecognitionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EDE7605390B99CD5816821C /* Pods_TextRecognition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextRecognition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7911A95BDFCFE01F1828A67 /* Pods-TextRecognitionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextRecognitionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextRecognitionUITests/Pods-TextRecognitionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B72D093E1F928F0C00E4F31D /* ImageScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScannerViewController.swift; sourceTree = "<group>"; };
+		B72D09401F92B0B200E4F31D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B769E43F1F907B65008912C6 /* TextRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B769E4421F907B65008912C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B769E4441F907B65008912C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B769E4471F907B65008912C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B769E4491F907B65008912C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B769E44C1F907B65008912C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B769E44E1F907B65008912C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B769E4531F907B65008912C6 /* TextRecognitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextRecognitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,9 +145,10 @@
 				B769E4421F907B65008912C6 /* AppDelegate.swift */,
 				B769E4441F907B65008912C6 /* ViewController.swift */,
 				B769E4461F907B65008912C6 /* Main.storyboard */,
-				B769E4491F907B65008912C6 /* Assets.xcassets */,
+				B72D093E1F928F0C00E4F31D /* ImageScannerViewController.swift */,
 				B769E44B1F907B65008912C6 /* LaunchScreen.storyboard */,
 				B769E44E1F907B65008912C6 /* Info.plist */,
+				B72D09401F92B0B200E4F31D /* Images.xcassets */,
 			);
 			path = TextRecognition;
 			sourceTree = "<group>";
@@ -285,8 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B769E44D1F907B65008912C6 /* LaunchScreen.storyboard in Resources */,
+				B72D09411F92B0B200E4F31D /* Images.xcassets in Resources */,
 				B769E4781F908EEC008912C6 /* tessdata in Resources */,
-				B769E44A1F907B65008912C6 /* Assets.xcassets in Resources */,
 				B769E4481F907B65008912C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +467,7 @@
 			files = (
 				B769E4451F907B65008912C6 /* ViewController.swift in Sources */,
 				B769E4431F907B65008912C6 /* AppDelegate.swift in Sources */,
+				B72D093F1F928F0C00E4F31D /* ImageScannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,10 +636,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33QJ55F2LM;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TextRecognition/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fd.ocr.TextRecognition;
+				PRODUCT_BUNDLE_IDENTIFIER = amrit.ocr.TextRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SSSS = "";
 				SWIFT_VERSION = 4.0;
@@ -650,10 +654,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33QJ55F2LM;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TextRecognition/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fd.ocr.TextRecognition;
+				PRODUCT_BUNDLE_IDENTIFIER = amrit.ocr.TextRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SSSS = "";
 				SWIFT_VERSION = 4.0;
