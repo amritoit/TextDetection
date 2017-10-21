@@ -7,6 +7,8 @@ target 'TextRecognition' do
 
   # Pods for TextRecognition
   pod 'TesseractOCRiOS', '4.0'
+  pod 'GPUImage', '0.1.7'
+  pod 'AKImageCropperView', '2.0.0'
   target 'TextRecognitionTests' do
     inherit! :search_paths
     # Pods for testing
